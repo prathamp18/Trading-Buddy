@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="sidebar.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Homepage</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Trading Buddy</span>
+                    <span class="profession">Stock App</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+               <!-- <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>-->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" onclick="homepfunc()">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text" >HOMEPAGE</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" onclick="location.href='blogpost.html'">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">BLOGPOSTS</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="signout.html"onclick="settingspfunc()">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">SETTINGS</span>
+                        </a>
+                    </li>
+
+                   <li class="nav-link">
+                        <a href="#" onclick="contactpfunc()">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">CONTACT US</span>
+                        </a>
+                    </li>
+
+                  <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>-->
+
+                   <!--<li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>-->
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/blogpost/newlogin.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <!--
+               <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>-->
+                
+            </div>
+        </div>
+
+    </nav>
+
+ 
+    <script src="sidebar.js"></script>
+
+
+<div id="bodytext"> </div>
+    <div class="bodydisplay" id="bodydis">
+    <div class="tablestock" id="stockstable">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>%Change</th>
+                <th>Total Volume</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        <table class = "gfg">
+            <tr>
+                <td><a href="DJI.html">DJI</a></td> 
+                <td>+0.43</td>
+                <td>135.32 M</td>
+                <td>34488.92</td>
+            </tr>
+            <tr>
+                <td><a href="IXIC.html">IXIC</a></td>
+                <td>-0.53</td>
+                <td>299.23 M</td>
+                <td>11234.23</td>
+            </tr>
+            <tr>
+                <td><a href="Spy.html">SPY</a></td>
+                <td>0.90</td>
+                <td>50.45 M</td>
+                <td>410.42</td>
+            </tr>
+            <tr>
+                <td><a href="TSLA.html">TSLA</a></td>
+                <td>-0.20</td>
+                <td>70.67 M</td>
+                <td>215.47</td>
+            </tr>
+            <tr>
+                <td><a href='QQQ.html'>QQQ</a></td>
+                <td>-0.80</td>
+                <td>16.43 M</td>
+                <td>290.12</td>
+            </tr>
+            <tr>
+                <td><a href="Amazon.html">AMZN</a></td>
+                <td>-0.76</td>
+                <td>35.11 M</td>
+                <td>95.98</td>
+            </tr>
+            <tr>
+                <td><a href="GOOG.html">GOOG</a></td>
+                <td>-1.23</td>
+                <td>10.24 M</td>
+                <td>98.32</td>
+            </tr>
+            <tr>
+                <td><a href="NFLX.html">NFLX</a></td>
+                <td>-2.00</td>
+                <td>4.23 M</td>
+                <td>282.23</td>
+            </tr>
+            <tr>
+                <td><a href="HD.html">HD</a></td>
+                <td>1.89</td>
+                <td>4.56 M</td>
+                <td>328.54</td>
+            </tr>
+            <tr>
+                <td><a href="LULU.html">LULU</a></td>
+                <td>0.20</td>
+                <td>0.7 M</td>
+                <td>355.98</td>
+            </tr>
+            <tr>
+                <td><a href="BABA.html">BABA</a></td>
+                <td>-4.27</td>
+                <td>14.23 M</td>
+                <td>70.5</td>
+            </tr>
+            <tr>
+                <td><a href="NVDA.html">NVDA</a></td>
+                <td>-1.66</td>
+                <td>18.49 M</td>
+                <td>165.21</td>
+            </tr>
+            <tr>
+                <td><a href="CMG.html">CMG</a></td>
+                <td>+0.60</td>
+                <td>0.2 M</td>
+                <td>1528.5</td>
+            </tr>
+            <tr>
+                <td><a href="Apple.html">AAPL</a></td>
+                <td>-2.5</td>
+                <td>90.32 M</td>
+                <td>147.21</td>
+            </tr>
+            <tr>
+                <td><a href="META.html">META</a></td>
+                <td>-0.72</td>
+                <td>45.32 M</td>
+                <td>112.32</td>
+            </tr>
+            <tr>
+                <td><a href="SHOP.html">SHOP</a></td>
+                <td>+0.08</td>
+                <td>25.21 M</td>
+                <td>39.44</td>
+            </tr>
+            <tr>
+                <td><a href="BA.html">BA</a></td>
+                <td>+2.44</td>
+                <td>8.91 M</td>
+                <td>184.92</td>
+            </tr>
+            <tr>
+                <td><a href="MSFT.html">MSFT</a></td>
+                <td>-0.05</td>
+                <td>29.29 M</td>
+                <td>243.54</td>
+            </tr>
+            <tr>
+                <td><a href="AMD.html">AMD</a></td>
+                <td>-1.65</td>
+                <td>84.85 M</td>
+                <td>78.91</td>
+            </tr>
+            <tr>
+                <td><a href="DIS.html">DIS</a></td>
+                <td>-0.01</td>
+                <td>12.09 M</td>
+                <td>99.01</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <section class="home">
+        <div class="text" id="title">HOMEPAGE</div>
+    </section>
+
+
+</div>
+
+</body>
+</html>

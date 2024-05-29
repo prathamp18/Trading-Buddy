@@ -1,0 +1,58 @@
+body{
+    background-image: url("/blogpost/bgcol.jpeg");
+}
+button{
+    border-radius: 12px;
+    padding: 20px;
+    margin-left: 46%;
+    margin-top: 20px;
+    background-color:#d6f0f6;
+    color: #0c1e24;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    box-shadow: 2px 3px 5px #0c1e24;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {background-color: #d6f0f6; color: #0c1e24;}
+    to {background-color: #0c1e24; color: #d6f0f6; }
+}
+h1 {
+    text-align: center;
+    border: 100%;
+    /*border-color: white;
+    border-style: solid;*/
+    margin: auto;
+    margin-top: 20%;
+    padding: 20px;
+    color: #0c1e24;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    
+    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+     -225deg,
+     #0c1e24 0%,
+     #91b2bd 29%,
+     #0e6c8b 67%,
+     #3db0a3 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   /*display: inline-block;*/
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+ }
